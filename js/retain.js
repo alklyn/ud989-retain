@@ -59,7 +59,7 @@ $(function(){
                 var date = new Date(note.date);
                 htmlStr += '<li class="note">'+
                 note.content +
-                '<div class="note-date">' + date + '</div>' +
+                '<div class="note-date">' + date.toString() + '</div>' +
                 '</li>';
             });
             this.noteList.html( htmlStr );
